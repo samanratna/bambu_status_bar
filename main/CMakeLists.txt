@@ -1,0 +1,9 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "src/wifi.c"
+        "src/http_requests.c"
+    INCLUDE_DIRS
+        "."
+        "inc"
+)
