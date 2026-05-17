@@ -1,0 +1,140 @@
+[0;32mI (303) heap_ESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd24
+load:0x403cb700,len:0x2ed4
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.3-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 17 2026 11:59:54[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=19048h (102472) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=00029070 vaddr=3fc99d00 size=04aach ( 19116) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=0002db24 vaddr=40374000 size=024f4h (  9460) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=789f0h (494064) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000a8a18 vaddr=403764f4 size=13790h ( 79760) load[0m
+[0;32mI (223) esp_image: segment 5: paddr=000bc1b0 vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (232) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (232) boot: Disabling RNG early entropy source...[0m
+[0;32mI (242) cpu_start: Multicore app[0m
+[0;32mI (251) cpu_start: Pro cpu start user code[0m
+[0;32mI (251) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (251) app_init: Application information:[0m
+[0;32mI (252) app_init: Project name:     wifi_station[0m
+[0;32mI (256) app_init: App version:      bd6a03a-dirty[0m
+[0;32mI (260) app_init: Compile time:     May 17 2026 11:59:46[0m
+[0;32mI (265) app_init: ELF file SHA256:  ad9d2033a...[0m
+[0;32mI (269) app_init: ESP-IDF:          v5.4.3-dirty[0m
+[0;32mI (274) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (278) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (282) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (286) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (292) heap_init: At 3FCA28A8 len 00046E68 (283 KiB): RAM[0m
+[0;32mI (297) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (302) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (307) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (314) spi_flash: detected chip: boya[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (319) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (332) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (338) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (345) main_task: Started on CPU0[0m
+[0;32mI (355) main_task: Calling app_main()[0m
+[0;32mI (375) wifi station: ESP_WIFI_MODE_STA[0m
+[0;32mI (375) pp: pp rom version: e7ae62f[0m
+[0;32mI (375) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (385) wifi:wifi driver task: 3fcac9e4, prio:23, stack:6656, core=0[0m
+[0;32mI (395) wifi:wifi firmware version: e8ce6e2[0m
+[0;32mI (395) wifi:wifi certification version: v7.0[0m
+[0;32mI (395) wifi:config NVS flash: enabled[0m
+[0;32mI (395) wifi:config nano formatting: disabled[0m
+[0;32mI (395) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (405) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (405) wifi:Init management short buffer num: 32[0m
+[0;32mI (405) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (415) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (415) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (425) wifi:Init static rx buffer num: 10[0m
+[0;32mI (425) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (425) wifi_init: rx ba win: 6[0m
+[0;32mI (435) wifi_init: accept mbox: 6[0m
+[0;32mI (435) wifi_init: tcpip mbox: 32[0m
+[0;32mI (435) wifi_init: udp mbox: 6[0m
+[0;32mI (445) wifi_init: tcp mbox: 6[0m
+[0;32mI (445) wifi_init: tcp tx win: 5760[0m
+[0;32mI (445) wifi_init: tcp rx win: 5760[0m
+[0;32mI (455) wifi_init: tcp mss: 1440[0m
+[0;32mI (455) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (455) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (505) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (555) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (575) wifi:mode : sta (20:6e:f1:87:a3:28)[0m
+[0;32mI (575) wifi:enable tsf[0m
+[0;32mI (575) wifi station: wifi_init_sta finished.[0m
+[0;32mI (1945) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1945) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1955) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1965) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (4985) wifi:state: run -> init (0xf00)[0m
+[0;32mI (4995) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4995) wifi station: retry to connect to the AP[0m
+[0;32mI (4995) wifi station: connect to the AP fail[0m
+[0;32mI (7405) wifi station: retry to connect to the AP[0m
+[0;32mI (7405) wifi station: connect to the AP fail[0m
+[0;32mI (7405) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7415) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (7425) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (7435) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (10455) wifi:state: run -> init (0xf00)[0m
+[0;32mI (10465) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (10465) wifi station: retry to connect to the AP[0m
+[0;32mI (10465) wifi station: connect to the AP fail[0m
+[0;32mI (12875) wifi station: retry to connect to the AP[0m
+[0;32mI (12875) wifi station: connect to the AP fail[0m
+[0;32mI (12875) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (12875) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (12895) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (12905) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (15925) wifi:state: run -> init (0xf00)[0m
+[0;32mI (15935) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15935) wifi station: retry to connect to the AP[0m
+[0;32mI (15935) wifi station: connect to the AP fail[0m
+[0;32mI (18345) wifi station: connect to the AP fail[0m
+[0;32mI (18345) wifi station: Failed to connect to SSID:gvsustds, password:stdsgvsu[0m
+[1;31mE (18345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[0;32mI (18345) main_task: Returned from app_main()[0m
+[1;31mE (19345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (20345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (21345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (22345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (23345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (24345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (25345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (26345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (27345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (28345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (29345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (30345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (31345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (32345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (33345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (34345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (35345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (36345) wifi station: DNS lookup failed err=202 res=0x0[0m
+[1;31mE (37345) wifi station: DNS lookup failed err=202 res=0x0[0m

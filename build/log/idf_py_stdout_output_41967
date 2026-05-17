@@ -1,0 +1,91 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /Users/helloworld/esp/bambu_lights/build/bootloader/esp-idf/esptool_py && /Users/helloworld/.espressif/python_env/idf5.4_py3.12_env/bin/python /Users/helloworld/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/helloworld/esp/bambu_lights/build/bootloader/bootloader.bin
+Bootloader binary size 0x51c0 bytes. 0x2e40 bytes (36%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /Users/helloworld/esp/bambu_lights/main/main.h:2,
+                 from /Users/helloworld/esp/bambu_lights/main/main.c:2:
+/Users/helloworld/esp/bambu_lights/main/inc/http_requests.h:27:20: warning: 'REQUEST' defined but not used [-Wunused-variable]
+   27 | static const char *REQUEST = "GET " WEB_PATH " HTTP/1.0\r\n"
+      |                    ^~~~~~~
+In file included from /Users/helloworld/esp/bambu_lights/main/main.h:1:
+/Users/helloworld/esp/bambu_lights/main/inc/wifi.h:69:12: warning: 's_retry_num' defined but not used [-Wunused-variable]
+   69 | static int s_retry_num = 0;
+      |            ^~~~~~~~~~~
+/Users/helloworld/esp/bambu_lights/main/inc/wifi.h:61:27: warning: 's_wifi_event_group' defined but not used [-Wunused-variable]
+   61 | static EventGroupHandle_t s_wifi_event_group;
+      |                           ^~~~~~~~~~~~~~~~~~
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/src/wifi.c.obj
+[6/11] Linking C static library esp-idf/main/libmain.a
+[7/11] Generating ld/sections.ld
+[8/11] Linking CXX executable wifi_station.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/helloworld/esp/bambu_lights/build/wifi_station.bin
+[10/11] cd /Users/helloworld/esp/bambu_lights/build/esp-idf/esptool_py && /Users/helloworld/.espressif/python_env/idf5.4_py3.12_env/bin/python /Users/helloworld/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/helloworld/esp/bambu_lights/build/partition_table/partition-table.bin /Users/helloworld/esp/bambu_lights/build/wifi_station.bin
+wifi_station.bin binary size 0xac1f0 bytes. Smallest app partition is 0x100000 bytes. 0x53e10 bytes (33%) free.
+[10/11] cd /Users/helloworld/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/helloworld/esp/esp-idf -D "SERIAL_TOOL=/Users/helloworld/.espressif/python_env/idf5.4_py3.12_env/bin/python;;/Users/helloworld/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/helloworld/esp/bambu_lights/build -P /Users/helloworld/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.usbmodem1101 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 wifi_station.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.11.0
+Serial port /dev/cu.usbmodem1101
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 20:6e:f1:87:a3:28
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000bcfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 20928 bytes to 13328...
+Writing at 0x00000000... (100 %)
+Wrote 20928 bytes (13328 compressed) at 0x00000000 in 0.4 seconds (effective 400.5 kbit/s)...
+Hash of data verified.
+Compressed 705008 bytes to 439239...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c924... (7 %)
+Writing at 0x00025929... (11 %)
+Writing at 0x000300f0... (14 %)
+Writing at 0x0003618f... (18 %)
+Writing at 0x0003cbe3... (22 %)
+Writing at 0x000429d7... (25 %)
+Writing at 0x000481d0... (29 %)
+Writing at 0x0004df18... (33 %)
+Writing at 0x00053cbb... (37 %)
+Writing at 0x000598b2... (40 %)
+Writing at 0x0005f9e9... (44 %)
+Writing at 0x000658e5... (48 %)
+Writing at 0x0006a91c... (51 %)
+Writing at 0x0007020c... (55 %)
+Writing at 0x000758ee... (59 %)
+Writing at 0x0007ad0a... (62 %)
+Writing at 0x00080322... (66 %)
+Writing at 0x000860e2... (70 %)
+Writing at 0x0008bce3... (74 %)
+Writing at 0x00091678... (77 %)
+Writing at 0x00096cf3... (81 %)
+Writing at 0x0009f946... (85 %)
+Writing at 0x000a5513... (88 %)
+Writing at 0x000ab5c4... (92 %)
+Writing at 0x000b18d0... (96 %)
+Writing at 0x000b777c... (100 %)
+Wrote 705008 bytes (439239 compressed) at 0x00010000 in 6.1 seconds (effective 921.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 431.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

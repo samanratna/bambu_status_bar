@@ -21,8 +21,12 @@
    If you'd rather not, just change the below entries to strings with
    the config you want - ie #define EXAMPLE_WIFI_SSID "mywifissid"
 */
-#define EXAMPLE_ESP_WIFI_SSID      "SpectrumSetup-1E"
-#define EXAMPLE_ESP_WIFI_PASS      "widesnake304"
+#define EXAMPLE_ESP_WIFI_SSID      "gvsustds"
+#define EXAMPLE_ESP_WIFI_PASS      "studsgvsu"
+// #define EXAMPLE_ESP_WIFI_SSID      "SpectrumSetup-1E"
+// #define EXAMPLE_ESP_WIFI_PASS      "widesnake304"
+
+
 #define EXAMPLE_ESP_MAXIMUM_RETRY  CONFIG_ESP_MAXIMUM_RETRY
 
 #if CONFIG_ESP_WPA3_SAE_PWE_HUNT_AND_PECK
